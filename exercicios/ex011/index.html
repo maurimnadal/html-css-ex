@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídia em HTML</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <picture>
+        <!--tem q estar nessa ordem (imagem principal grande, em cima a menor imagem e vai aumentando)-->
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem grande">
+    </picture>
+    <h2>Testando mais imagens</h2>
+    <picture>
+        <source media="(max-width: 450px)" srcset="imagens/insta-192.png" type="image/png">
+        <source media="(max-width: 850px)" srcset="imagens/insta-400.png" type="image/png">
+        <source media="(max-width: 1250px)" srcset="imagens/insta-800.png" type="image/png">
+        <source media="(max-width: 2050px)" srcset="imagens/insta-1200.png" type="image/png">
+        <img src="imagens/insta-g.png" alt="Ícone Instagram grande">
+    </picture>
+</body>
+</html>
