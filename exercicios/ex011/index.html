@@ -21,5 +21,18 @@
         <source media="(max-width: 2050px)" srcset="imagens/insta-1200.png" type="image/png">
         <img src="imagens/insta-g.png" alt="Ícone Instagram grande">
     </picture>
+    
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML.</p>
+    <audio src="midia/Woodshedder - Quincas Moreira.mp3" controls autoplay></audio>
+    <!--MP3, OGG, WAV (COMPATIBILDADE)--> 
+    <br>
+    
+    <audio preload="metadata" controls loop>
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midia/guanacast-33.ogg" type="audio/ogg">
+        <source src="midia/guanacast-33.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não é compatível com o formato do áudio. <a href="midia/guanacast-33.mp3">Clique aqui para baixar o arquivo</a></p>
+    </audio>
 </body>
 </html>
