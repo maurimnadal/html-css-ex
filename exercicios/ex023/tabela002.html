@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Grandes</title>
+    <style>
+        body{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        table{
+            width: 450px;
+            border-collapse: collapse;
+        }
+
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            border: 3px dotted black;
+            background-color: rgb(70, 69, 69);
+            color: white;
+            padding: 5px;
+        }
+
+        td, th{
+            border: 1px solid black;
+            padding: 5px;
+            text-align: center;
+        }
+
+        thead, tfoot{
+            background-color: darkgray;
+        }
+
+        .num{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabelas Grandes</h1>
+    <table>
+        <caption>População Dos 3 Maiores Estados</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>SP</td>
+                <td class="num">44 411 238</td>
+            </tr>
+            <tr>
+                <td>MG</td>
+                <td class="num">20 538 718</td>
+            </tr>
+            <tr>
+                <td>RJ</td>
+                <td class="num">16 054 524</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td class="num"><strong>81.004.480</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
